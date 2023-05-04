@@ -32,11 +32,18 @@ def bubble_sort(arr, sorting_order):
 
                 else:
                     # Return an empty array
-                    arr_result = []
+                    arr_result = [0]
     else:
         arr_result = -1
 
-    return arr_result
+    if n > 10:
+        return 1
+    elif n == 0:
+        return 0
+    elif type(arr_result[0]) != int:
+        return 2
+    else:
+        return arr_result
 
 def main():
     # Driver code to test above
@@ -51,6 +58,7 @@ def main():
     print("Sorted array in ascending order: ")
     result = bubble_sort(arr, SORT_DESCENDING)
     print(result)
+
 
 if __name__ == "__main__":
     main()
