@@ -45,7 +45,7 @@ def test_bubble_sort_0():
 
     assert (result == 0)
 
-def test_bubble_sort_no_numbers():
+def test_bubble_sort_no_integers():
     result = []
     input_arr = ["bobby", "shawn"]
 
